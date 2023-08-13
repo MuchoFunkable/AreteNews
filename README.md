@@ -4,7 +4,7 @@ Arete is a Greek word describing a person striving for moral virtue and excellen
 
 ### How does Arete News work?
 
-Arete News works by consolidating news from the most relevant news sources in the United States. Using XXX, it finds similar topics amongst these news sources based on relatedness on word occurence. Once articles have been found from these sources, they are grouped together based on their similarity-score. Afterwards, the articles are run through a large language model like OpenAI's GPT-4, which summarizes the articles and finds differences and similarities between the articles in this specific topic.
+Arete News works by consolidating news from the most relevant news sources in the United States. Using Levenshtein distance, it calculates the distance (difference) between the contents of news articles. The news articles are then grouped based on their distance. Afterwards, the articles are run through a large language model like OpenAI's GPT-4, which summarizes the articles and finds differences and similarities between the articles in this specific topic.
 
 The point of this is to expose users to highly divergent news sources, so that the users can make up their own mind about the news.
 
