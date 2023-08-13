@@ -1,6 +1,6 @@
 ## Arete News
 
-Arete is a Greek word describing a person striving for moral virtue and excellence. Arete News is a solution to todays problem of people only reading news from their most used sources, which are heavily influenced by the surroundings of where a person has been growing up and the people that they surround themself with. It is a problem because people are not exposing themselves to opposing viewpoints and thus not being challenged in their viewpoints, which is important for a functioning human being to have critical thinking to cultivate an ability to point out flaws and admit when they themself are wrong.
+Arete is a Greek word describing a person striving for moral virtue and excellence. Arete News is a solution to todays problem of people only reading news from their most used sources, which are heavily influenced by the surroundings of where a person has been growing up and the people that they surround themself with. It is a problem because people are not exposing themselves to opposing viewpoints and thus not being challenged in their viewpoints, which is important for a functioning human being to cultivate critical thinking and an ability to point out flaws and admit when they themself are wrong.
 
 ### How does Arete News work?
 
