@@ -71,7 +71,6 @@ const CompareSimilarityTwo = ({subject = 'The War in Ukraine'}) => {
 
   return (
     <div>
-      Hello Butt
     </div>
   );
 };

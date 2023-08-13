@@ -3,15 +3,12 @@ import CompareSimilarity from "./compareSimilarity"; // Import the CompareSimila
 import CompareSimilarityTwo from "./CompareSimilarityTwo";
 import "./App.css"; // Import the App.css file
 
-const Database = require("@replit/database")
-const db = new Database()
-
 // Import axios
 import axios from "axios";
 
 export default function App() {
   const [articles, setArticles] = useState([]);
-  const [ name, setName ] = useState('');
+  const [name, setName] = useState('');
 
   useEffect(() => {
     const fetchArticles = async () => {
@@ -27,28 +24,35 @@ export default function App() {
 
   const onChange = (e) => {
     setName(e.target.value)
-    
   }
 
-  const onClickSetName = () => {
-    db.set("name", name)
-    .then(() => {})
+  const onClickSetName = async () => {
+    // try {
+    //   const request = await axios.get('excitableprimesequences.mick-kalle-mkal.repl.co')
+    // } catch (error) {
+    //   console.error(error)
+    // }
   }
 
-  const onClickLS = () => {
-    db.set("name", name)
+  const onClickLS = async () => {
+    try {
+      const request = await axios.get('https://replit.com/@Mick-Kalle-MKal/ExcitablePrimeSequences/api/getData')
+      console.log(request)
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   return (
     <main>
       <h1>Article Views</h1>
       <button onClick={onClickSetName}>Click To Store a Name</button>
-      <input 
+      <input
         value={name}
         onChange={onChange}
       />
-      <button onClick={onClickLS}></button>
-      <CompareSimilarityTwo/>
+      <button onClick={onClickLS}>List DB</button>
+      <CompareSimilarityTwo />
       <CompareSimilarity /> {/* Run the CompareSimilarity component */}
     </main>
   );
